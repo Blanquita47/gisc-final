@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <base href="./">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - GISC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; display: flex; flex-direction: column; min-height: 100vh; }
+        .barra-superior-inicio { background-color: #0a2e4a; padding: 15px 20px; color: white; display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .contenedor-principal { display: flex; flex: 1; width: 100%; }
+        .menu-lateral { width: 250px; background-color: #0a2e4a; min-height: 100vh; padding: 20px 0; flex-shrink: 0; }
+        .menu-lateral ul { list-style: none; padding: 0; margin: 0; }
+        .menu-lateral ul li a { display: block; padding: 12px 20px; color: #ffffff !important; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .menu-lateral ul li a:hover { background-color: #1a5276; }
+        .contenido-central { flex: 1; padding: 30px; background-color: #f0f4f8; }
+        footer p { display: none !important; }
+        footer { font-size: 12px; text-align: center; color: #0a2e4a; padding: 15px; background-color: white; }
+        </style>
+<script>
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG') {
+            window.open(e.target.src, '_blank');
+        }
+    });
+</script>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- 1. FRANJA AZUL SUPERIOR (con logo FCMM y botón de autores) -->
+    <header class="barra-superior-inicio">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="logo-fcmm.png" alt="Logo FCMM" style="max-width: 30%">
+            <span style="font-weight: bold; font-size: 22px;">GISC</span>
+        </div>
+        
+        <button onclick="alert('Autores: Dra. Blanca Caridad Piedra Herrera, Profesora auxiliar y Consultante, UCMM. Colaboradores: Dra. Yanet Acosta Piedra, Dra. Rachel Martínez Rodríguez, Dr. Vladimir Fernández Acosta, Lic Marcos Manuel Silva Calderón. Institución: Facultad de Ciencias Médicas (FCMM) · Universidad de Ciencias Médicas de Matanzas (UCMM) · Cuba')" 
+                style="background-color: white; color: #0a2e4a; border: none; border-radius: 20px; padding: 8px 15px; font-weight: bold; font-size: 13px; cursor: pointer;">
+            Autores y Créditos
+        </button>
+    </header>
+
+    <!-- 2. CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-principal">
+        
+        <!-- 3. MENÚ LATERAL -->
+        <nav class="menu-lateral">
+       <ul>
+                <li><a href="modulo1.html">Módulo 1. Introducción a la Clínica</a></li>
+                <li><a href="modulo2.html">Módulo 2. Relación médico-paciente</a></li>
+                <li><a href="modulo3.html">Módulo 3. Derecho médico</a></li>
+                <li><a href="modulo4.html">Módulo 4. Procederes básicos</a></li>
+                <li><a href="modulo5_1.html">Módulo 5. Examen físico General (1ra parte)</a></li>
+                <li><a href="modulo5_2.html">Módulo 5. Examen físico General (2da parte)</a></li>
+                <li><a href="modulo5_3.html">Módulo 5. Examen físico General (3ra parte)</a></li>
+                <li><a href="modulo5_4.html">Módulo 5. Examen físico General (4ta parte)</a></li>
+                <li><a href="modulo5_5.html">Módulo 5. Examen físico General (5ta parte)</a></li>
+                <li><a href="modulo6_1.html">Módulo 6. Examen Regional</a></li>
+                <li><a href="modulo6_2.html">Módulo 6. Tiroides</a></li>
+                <li><a href="modulo6_3.html">Módulo 6. Abdomen</a></li>
+                <li><a href="modulo7_1.html">Módulo 7. Respiratorio (1ra parte)</a></li>
+                <li><a href="modulo7_2.html">Módulo 7. Respiratorio (2da parte)</a></li>
+                <li><a href="modulo7_3.html">Módulo 7. Respiratorio (3ra parte)</a></li>
+                <li><a href="modulo8.html">Módulo 8. Aparato Cardiovascular</a></li>
+                <li><a href="modulo8_2.html">Módulo 8. Sistema Vascular Periférico</a></li>
+                <li><a href="modulo9_1.html">Módulo 9. Digestivo (1ra parte)</a></li>
+                <li><a href="modulo9_2.html">Módulo 9. Digestivo (2da parte)</a></li>
+                <li><a href="modulo9_3.html">Módulo 9. Digestivo (3ra parte)</a></li>
+                <li><a href="modulo10.html">Módulo 10. Hemolinfopoyético</a></li>
+                <li><a href="modulo11.html">Módulo 11. Sistema Urinario</a></li>
+                <li><a href="modulo12.html">Módulo 12. Sistema Osteomioarticular</a></li>
+                <li><a href="modulo13_1.html">Módulo 13. SNC (Generalidades)</a></li>
+                <li><a href="modulo13_2.html">Módulo 13. SNC (Tono y Trofismo)</a></li>
+                <li><a href="modulo13_3.html">Módulo 13. SNC (Reflejos y Sensibilidad)</a></li>
+                <li><a href="modulo13_4.html" >Módulo 13. SNC (Pares craneales)</a></li>
+                <li><a href="modulo14.html">Módulo 14. Resumen</a></li>
+            </ul>
+        </nav>
+
+        <!-- 4. CONTENIDO CENTRAL -->
+        <main class="contenido-central">
+            
+            <!-- Logo UCMM antes del título -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="logo-ucmm.png" alt="Logo UCMM" style="max-width: 20%;">
+            </div>
+
+            <!-- Título -->
+            <h1 style="color: #0a2e4a; text-align: center; border-bottom: 3px solid #0a2e4a; padding-bottom: 15px; margin-bottom: 30px;">Guía Interactiva de Semiología Clínica</h1>
+            
+            <!-- Imagen de médico y enfermo -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="Imagen inicio.jpg" alt="Médico con paciente" style="max-width: 80%; border-radius: 15px;">
+            </div>
+
+            <!-- Bienvenida a la GISC -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h2 style="color: #0a2e4a;">Bienvenido a la GISC</h2>
+            </div>
+
+            <!-- Texto de bienvenida -->
+            <div style="text-align: justify; max-width: 800px; margin: 0 auto; margin-bottom: 30px;">
+                <p style="font-size: 16px; color: #333;">
+                    "La Guía Interactiva de Introducción a la Clínica es un recurso docente destinado a desarrollar en el estudiante las competencias necesarias para realizar una adecuada anamnesis, ejecutar correctamente las técnicas básicas del examen físico y confeccionar una Historia Clínica de calidad, como base para el aprendizaje posterior de la Propedéutica Clínica y la Medicina Interna." Esta guía ha sido diseñada para acompañarle en el aprendizaje de la Introducción a la Clínica.
+                </p>
+            </div>
+
+            <!-- Narración de bienvenida -->
+            <div style="background-color: #f0f4f8; padding: 20px; border-radius: 10px; border-left: 5px solid #0a2e4a; max-width: 800px; margin: 0 auto; margin-bottom: 40px;">
+                <p style="font-style: italic; color: #333; margin-bottom: 15px;">🎧 <strong>Narración:</strong> Esta guía ha sido diseñada para acompañarte en el aprendizaje de la Introducción a la Clínica. Aquí desarrollarás las bases de la semiotecnia, aprenderás a confeccionar una Historia Clínica correctamente estructurada y adquirirás las competencias necesarias para afrontar con seguridad tu formación clínica posterior.</p>
+                <audio controls style="width: 100%;">
+                    <source src="narracion-inicio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el audio.
+                </audio>
+            </div>
+
+            <!-- Botón Comenzar con leyenda -->
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 16px; color: #333; margin-bottom: 10px;">Esta guía ha sido diseñada para acompañarte en el aprendizaje de la Introducción a la Clínica. Aquí desarrollarás las bases de la semiotecnia, aprenderás a confeccionar una Historia Clínica correctamente estructurada y adquirirás las competencias necesarias para afrontar con seguridad tu formación clínica posterior.</p>
+                <a href="modulo1.html" style="background-color: #0a2e4a; color: white; text-decoration: none; padding: 15px 40px; border-radius: 30px; font-weight: bold; font-size: 18px; display: inline-block;">Comenzar</a>
+            </div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="index.html" style="background-color: white; color: #0a2e4a; border: 2px solid #0a2e4a; text-decoration: none; padding: 12px 30px; border-radius: 30px; font-weight: bold; font-size: 16px; display: inline-block;">← Volver a la portada</a>
+</div>
+        </main>
+    </div>
+
+    <footer>GISC - Guía Interactiva de Semiología Clínica</footer>
+
+</body>
+</html>

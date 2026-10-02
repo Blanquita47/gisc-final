@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base href="./"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 7 - Segunda Parte - GISC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; display: flex; flex-direction: column; min-height: 100vh; }
+        .barra-superior-inicio { background-color: #0a2e4a; padding: 15px 20px; color: white; display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .contenedor-principal { display: flex; flex: 1; width: 100%; }
+        .menu-lateral { width: 250px; background-color: #0a2e4a; min-height: 100vh; padding: 20px 0; flex-shrink: 0; }
+        .menu-lateral ul { list-style: none; padding: 0; margin: 0; }
+        .menu-lateral ul li a { display: block; padding: 12px 20px; color: #ffffff !important; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .menu-lateral ul li a:hover { background-color: #1a5276; }
+        .contenido-central { flex: 1; padding: 30px; background-color: #f0f4f8; }
+        footer p { display: none !important; }
+        footer { font-size: 12px; text-align: center; color: #0a2e4a; padding: 15px; background-color: white; }
+    </style>
+<script>
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG') {
+            window.open(e.target.src, '_blank');
+        }
+    });
+</script>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="barra-superior-inicio">
+        <div style="font-weight: bold; font-size: 22px;">GISC</div>
+        <div style="font-size: 16px;">Módulo 7: Respiratorio (Segunda Parte)</div>
+    </header>
+
+    <div class="contenedor-principal">
+        <nav class="menu-lateral">
+         <ul>
+    <li><a href="modulo1.html">Módulo 1. Introducción a la Clínica</a></li>
+    <li><a href="modulo2.html">Módulo 2. Relación médico-paciente</a></li>
+    <li><a href="modulo3.html">Módulo 3. Derecho médico</a></li>
+    <li><a href="modulo4.html">Módulo 4. Procederes básicos</a></li>
+    <li><a href="modulo5_1.html">Módulo 5. Examen físico General (1ra parte)</a></li>
+    <li><a href="modulo5_2.html">Módulo 5. Examen físico General (2da parte)</a></li>
+    <li><a href="modulo5_3.html">Módulo 5. Examen físico General (3ra parte)</a></li>
+    <li><a href="modulo5_4.html">Módulo 5. Examen físico General (4ta parte)</a></li>
+    <li><a href="modulo5_5.html">Módulo 5. Examen físico General (5ta parte)</a></li>
+    <li><a href="modulo6_1.html">Módulo 6. Examen Regional (Cabeza y Cuello)</a></li>
+    <li><a href="modulo6_2.html">Módulo 6. Tiroides</a></li>
+    <li><a href="modulo6_3.html">Módulo 6. Abdomen</a></li>
+    <li><a href="modulo7_1.html">Módulo 7. Respiratorio (1ra parte)</a></li>
+    <li><a href="modulo7_2.html">Módulo 7. Respiratorio (2da parte)</a></li>
+    <li><a href="modulo7_3.html">Módulo 7. Respiratorio (3ra parte)</a></li>
+    <li><a href="modulo8.html">Módulo 8. Aparato Cardiovascular</a></li>
+    <li><a href="modulo8_2.html">Módulo 8. Sistema Vascular Periférico</a></li>
+    <li><a href="modulo9_1.html">Módulo 9. Digestivo (1ra parte)</a></li>
+    <li><a href="modulo9_2.html">Módulo 9. Digestivo (2da parte)</a></li>
+    <li><a href="modulo9_3.html">Módulo 9. Digestivo (3ra parte)</a></li>
+    <li><a href="modulo10.html">Módulo 10. Hemolinfopoyético</a></li>
+    <li><a href="modulo11.html">Módulo 11. Sistema Urinario</a></li>
+    <li><a href="modulo12.html">Módulo 12. Sistema Osteomioarticular</a></li>
+    <li><a href="modulo13_1.html">Módulo 13. SNC (Generalidades, Taxia y Praxia)</a></li>
+    <li><a href="modulo13_2.html">Módulo 13. SNC (Tono y Trofismo, Signos meníngeos)</a></li>
+    <li><a href="modulo13_3.html">Módulo 13. SNC (Motilidad y Fuerza muscular)</a></li>
+    <li><a href="modulo13_4.html">Módulo 13. SNC (Reflejos y Sensibilidad)</a></li>
+    <li><a href="modulo13_5.html">Módulo 13. SNC (Pares craneales)</a></li>
+    <li><a href="modulo14.html">Módulo 14. Resumen de la guía</a></li>
+</ul>
+        </nav>
+
+        <main class="contenido-central">
+            <h1 style="color: #0a2e4a; text-align: center; border-bottom: 3px solid #0a2e4a; padding-bottom: 15px; margin-bottom: 30px;">Módulo 7: Aparato Respiratorio (Segunda Parte)</h1>
+
+            <!-- ESCENA 1: INSPECCIÓN DEL TÓRAX -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 1: Inspección del tórax</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender a observar la forma, simetría y los movimientos respiratorios del tórax.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="inspto-mod7.png" alt="Inspección del tórax" style="width: 70%; max-width: 450px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narración2-mod7.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- ESCENA 2: PALPACIÓN DEL TÓRAX -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 2: Palpación del tórax</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender a palpar el tórax, evaluar la expansibilidad y las vibraciones vocales.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="palpto-mod7.png" alt="Palpación del tórax" style="width: 70%; max-width: 450px; border-radius: 10px;">
+                </div>
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="verticebase-mod7.jpg" alt="Maniobras de vértice y base" style="width: 90%; max-width: 450px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narracion3-mod7.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: PERCUSIÓN DEL TÓRAX -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 3: Percusión del tórax</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender percusión dígito-digital del tórax en diferentes planos.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="percto-mod7.png" alt="Percusión del tórax" style="width: 70%; max-width: 450px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narracion4-mod7.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <p style="font-style: italic; color: #333; margin-bottom: 10px;">🎬 <strong>Video:</strong> Percusión del tórax</p>
+                    <video controls style="width: 100%; border-radius: 10px;">
+                        <source src="percusion-mod7.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                <a href="index.html" style="background-color: #0a2e4a; color: white; text-decoration: none; padding: 12px 30px; border-radius: 30px; font-weight: bold; font-size: 16px; display: inline-block;">← Volver a la portada</a>
+            </div>
+        </main>
+    </div>
+   <footer>
+        <p style="font-size: 12px; color: #0a2e4a; margin: 0;">GISC - Guía Interactiva de Semiología Clínica</p>
+        <p style="font-size: 11px; color: #555; margin: 5px 0 0 0;">© 2026 [Dra. Blanca Caridad Piedra Herrera]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

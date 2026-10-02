@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada - GISC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        .portada { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: 20px; }
+        
+        .logo-pequeno { position: absolute; top: 20px; left: 20px; height: 50px; }
+        
+        .logo-central { max-width: 700px; margin-bottom: 30px; }
+        
+        .titulo { color: #0a2e4a; font-size: 32px; margin-bottom: 15px; }
+        
+        .frase { font-size: 18px; color: #555; margin-bottom: 20px; }
+        
+        .instituciones { font-size: 14px; color: #777; margin-bottom: 40px; }
+        
+        .boton-entrar { background-color: #0a2e4a; color: white; text-decoration: none; padding: 15px 40px; border-radius: 30px; font-weight: bold; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO PEQUEÑO EN LA ESQUINA -->
+    <img src=".vscode\logo-gisc.png" alt="Logo GISC" class="logo-pequeno">
+
+    <div class="portada">
+        <!-- LOGO GRANDE EN EL CENTRO -->
+        <img src="logogisc-grande.png" alt="Logo GISC Grande" class="logo-central">
+
+        <!-- TÍTULO -->
+        <h1 class="titulo">Guía Interactiva de Semiología Clínica</h1>
+
+        <!-- FRASE -->
+        <p class="frase">Aprender a observar es el primer paso para aprender a diagnosticar.</p>
+
+        <!-- INSTITUCIONES -->
+        <p class="instituciones">Facultad de Ciencias Médicas · Universidad de Ciencias Médicas de Matanzas.<br>Departamento de Medicina General Integral · Disciplina Introducción a la Clínica.</p>
+
+        <!-- BOTÓN ENTRAR A LA GUÍA -->
+        <a href="inicio.html" class="boton-entrar">Entrar a la guía</a>
+    </div>
+
+</body>
+</html>

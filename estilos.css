@@ -1,0 +1,116 @@
+/* ===== RESET Y BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #1a2a3a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== BARRA SUPERIOR ===== */
+.barra-superior-inicio {
+    background: #0a2e4a;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ===== CONTENEDOR PRINCIPAL (MENÚ + CONTENIDO) ===== */
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+}
+
+/* ===== MENÚ LATERAL ===== */
+.menu-lateral {
+    width: 250px;
+    background-color: #0a2e4a;
+    min-height: 100vh;
+    padding: 20px 0;
+    flex-shrink: 0;
+    order: -1; /* Fuerza el menú a la izquierda */
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #1a5276;
+}
+
+/* ===== CONTENIDO CENTRAL ===== */
+.contenido-central {
+    flex: 1;
+    padding: 30px;
+    background-color: #f0f4f8;
+}
+
+/* ===== ESTILO ESTÁNDAR PARA TODAS LAS IMÁGENES ===== */
+.contenido-central img {
+    max-width: 85% !important;      /* Tamaño grande y uniforme */
+    height: auto !important;
+    display: block !important;
+    margin: 10px auto !important;   /* Espacio uniforme y pequeño */
+    border-radius: 12px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Reducir el espacio entre imágenes seguidas */
+.contenido-central img + img {
+    margin-top: 5px !important;
+}
+
+/* Reducir el espacio de los contenedores de imágenes */
+.contenido-central div[style*="text-align: center"] {
+    margin: 5px 0 !important;
+}
+/* ===== MENÚ LATERAL COMPACTO ===== */
+.menu-lateral {
+    width: 180px !important;          /* Más estrecho */
+    padding: 10px 0 !important;        /* Menos padding vertical */
+}
+
+.menu-lateral ul li a {
+    padding: 6px 12px !important;      /* Menos espacio por enlace */
+    font-size: 12px !important;        /* Letra más pequeña */
+    line-height: 1.2 !important;       /* Menos espacio entre líneas */
+    white-space: normal !important;    /* Permite saltos de línea */
+}
+body::after {
+    content: "GISC - Guía Interactiva de Semiología Clínica | © 2026 Dra. Blanca Caridad Piedra Herrera. Todos los derechos reservados.";
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+
+

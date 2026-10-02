@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 13 - Segunda Parte - GISC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; display: flex; flex-direction: column; min-height: 100vh; }
+        .barra-superior-inicio { background-color: #0a2e4a; padding: 15px 20px; color: white; display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .contenedor-principal { display: flex; flex: 1; width: 100%; }
+        .menu-lateral { width: 250px; background-color: #0a2e4a; min-height: 100vh; padding: 20px 0; flex-shrink: 0; }
+        .menu-lateral ul { list-style: none; padding: 0; margin: 0; }
+        .menu-lateral ul li a { display: block; padding: 12px 20px; color: #ffffff !important; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .menu-lateral ul li a:hover { background-color: #1a5276; }
+        .contenido-central { flex: 1; padding: 30px; background-color: #f0f4f8; }
+        footer p { display: none !important; }
+        footer { font-size: 12px; text-align: center; color: #0a2e4a; padding: 15px; background-color: white; }
+    </style>
+<script>
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG') {
+            window.open(e.target.src, '_blank');
+        }
+    });
+</script>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="barra-superior-inicio">
+        <div style="font-weight: bold; font-size: 22px;">GISC</div>
+        <div style="font-size: 16px;">Módulo 13: SNC (Segunda Parte)</div>
+    </header>
+
+    <div class="contenedor-principal">
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="modulo1.html">Módulo 1. Introducción a la Clínica</a></li>
+                <li><a href="modulo2.html">Módulo 2. Relación médico-paciente</a></li>
+                <li><a href="modulo3.html">Módulo 3. Derecho médico</a></li>
+                <li><a href="modulo4.html">Módulo 4. Procederes básicos</a></li>
+                <li><a href="modulo5_1.html">Módulo 5. Examen físico General (1ra parte)</a></li>
+                <li><a href="modulo5_2.html">Módulo 5. Examen físico General (2da parte)</a></li>
+                <li><a href="modulo5_3.html">Módulo 5. Examen físico General (3ra parte)</a></li>
+                <li><a href="modulo5_4.html">Módulo 5. Examen físico General (4ta parte)</a></li>
+                <li><a href="modulo5_5.html">Módulo 5. Examen físico General (5ta parte)</a></li>
+                <li><a href="modulo6_1.html">Módulo 6. Examen Regional</a></li>
+                <li><a href="modulo6_2.html">Módulo 6. Tiroides</a></li>
+                <li><a href="modulo6_3.html">Módulo 6. Abdomen</a></li>
+                <li><a href="modulo7_1.html">Módulo 7. Respiratorio (1ra parte)</a></li>
+                <li><a href="modulo7_2.html">Módulo 7. Respiratorio (2da parte)</a></li>
+                <li><a href="modulo7_3.html">Módulo 7. Respiratorio (3ra parte)</a></li>
+                <li><a href="modulo8.html">Módulo 8. Aparato Cardiovascular</a></li>
+                <li><a href="modulo8_2.html">Módulo 8. Sistema Vascular Periférico</a></li>
+                <li><a href="modulo9_1.html">Módulo 9. Digestivo (1ra parte)</a></li>
+                <li><a href="modulo9_2.html">Módulo 9. Digestivo (2da parte)</a></li>
+                <li><a href="modulo9_3.html">Módulo 9. Digestivo (3ra parte)</a></li>
+                <li><a href="modulo10.html">Módulo 10. Hemolinfopoyético</a></li>
+                <li><a href="modulo11.html">Módulo 11. Sistema Urinario</a></li>
+                <li><a href="modulo12.html">Módulo 12. Sistema Osteomioarticular</a></li>
+                <li><a href="modulo13_1.html">Módulo 13. SNC (Generalidades)</a></li>
+                <li><a href="modulo13_2.html" style="background-color: #1a5276;">Módulo 13. SNC (Tono y Trofismo)</a></li>
+                <li><a href="modulo13_3.html">Módulo 13. SNC (Reflejos y Sensibilidad)</a></li>
+                 <li><a href="modulo13_4.html" >Módulo 13. SNC (Pares craneales)</a></li>
+                <li><a href="modulo14.html">Módulo 14. Resumen</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido-central">
+            <h1 style="color: #0a2e4a; text-align: center; border-bottom: 3px solid #0a2e4a; padding-bottom: 15px; margin-bottom: 30px;">Módulo 13: SNC (Motilidad, Fuerza, Tono y Signos meníngeos)</h1>
+
+            <!-- ESCENA 1: MOTILIDAD Y FUERZA MUSCULAR -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 1: Motilidad y Fuerza muscular</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender a explorar la motilidad y la fuerza muscular.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="mot-mod13_2.png" alt="Motilidad" style="width: 90%; max-width: 450px; border-radius: 10px;">
+                </div>
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="fuerza-mod13_2.png" alt="Fuerza muscular" style="width: 90%; max-width: 450px; border-radius: 10px;">
+                </div>
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="manfuerz-mod13_2.png" alt="Maniobras de fuerza" style="width: 90%; max-width: 450px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narracion1-mod13_2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <p style="font-style: italic; color: #333; margin-bottom: 10px;">🎬 <strong>Video:</strong> Fuerza muscular</p>
+                    <video controls style="width: 100%; border-radius: 10px;">
+                        <source src="fuerza-mod13_2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+            </div>
+
+            <!-- ESCENA 2: TONO MUSCULAR -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 2: Tono muscular</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender a explorar el tono muscular.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="hipotonia-mod13_2.jpg" alt="Tono muscular" style="width:60%; max-width: 450px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narracion2-mod13_2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+                
+                 <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <p style="font-style: italic; color: #333; margin-bottom: 10px;">🎬 <strong>Video:</strong> Tono muscular</p>
+                    <video controls style="width: 100%; border-radius: 10px;">
+                        <source src="tono-mod13_2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: SIGNOS MENÍNGEOS -->
+            <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #0a2e4a; border-bottom: 2px solid #0a2e4a; padding-bottom: 10px;">Escena 3: Signos meníngeos</h3>
+                <p style="margin: 10px 0;"><strong>Objetivo:</strong> Aprender a explorar los signos meníngeos.</p>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="meningeos-mod13_2.png" alt="Signos meníngeos" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <audio controls style="width: 100%;">
+                        <source src="narracion3-mod13_2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+                
+                <div style="background-color: #f0f4f8; padding: 10px; border-radius: 10px; border-left: 5px solid #0a2e4a; margin-top: 10px;">
+                    <p style="font-style: italic; color: #333; margin-bottom: 10px;">🎬 <strong>Video:</strong> Signos meníngeos</p>
+                    <video controls style="width: 100%; border-radius: 10px;">
+                        <source src="signosmen-mod13_2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                <a href="index.html" style="background-color: #0a2e4a; color: white; text-decoration: none; padding: 12px 30px; border-radius: 30px; font-weight: bold; font-size: 16px; display: inline-block;">← Volver a la portada</a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p style="font-size: 12px; color: #0a2e4a; margin: 0;">GISC - Guía Interactiva de Semiología Clínica</p>
+        <p style="font-size: 11px; color: #555; margin: 5px 0 0 0;">© 2026 [Dra. Blanca Caridad Piedra Herrera]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
